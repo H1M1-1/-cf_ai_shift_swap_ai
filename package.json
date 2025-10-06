@@ -1,0 +1,24 @@
+{
+  "name": "cf_ai_shift_swap_ai",
+  "version": "1.0.0",
+  "description": "AI-powered shift swap matching system using Cloudflare Workers, Durable Objects, and Workers AI",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "start": "wrangler dev"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "ai",
+    "durable-objects",
+    "scheduling"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "wrangler": "^4.42.0"
+  }
+}

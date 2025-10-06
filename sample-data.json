@@ -1,0 +1,39 @@
+{
+  "description": "Sample shift posts for testing Shift Swap AI - Max 2 shifts per day to prevent calendar overflow",
+  "posts": [
+    {
+      "user": "Alice Johnson",
+      "role": "Nurse",
+      "date": "2025-10-15",
+      "shift": "09:00-17:00",
+      "notes": "Preferably swap with another RN"
+    },
+    {
+      "user": "Dr. Charlie Brown",
+      "role": "Doctor",
+      "date": "2025-10-15",
+      "shift": "14:00-22:00",
+      "notes": "Evening shift preferred"
+    },
+    {
+      "user": "Bob Smith",
+      "role": "Nurse",
+      "date": "2025-10-18",
+      "shift": "09:00-17:00",
+      "notes": "Flexible with dates"
+    },
+    {
+      "user": "Diana Prince",
+      "role": "Nurse",
+      "date": "2025-10-22",
+      "shift": "21:00-05:00",
+      "notes": "Night shift, prefer someone experienced with ICU"
+    }
+  ],
+  "curl_examples": {
+    "post_shift": "curl -X POST http://localhost:8787/api/post -H 'Content-Type: application/json' -d '{\"user\":\"Alice Johnson\",\"role\":\"Nurse\",\"date\":\"2025-10-15\",\"shift\":\"09:00-17:00\",\"notes\":\"Preferably swap with another RN\"}'",
+    "list_shifts": "curl http://localhost:8787/api/list",
+    "request_match": "curl -X POST http://localhost:8787/api/match -H 'Content-Type: application/json' -d '{\"requestId\":\"<SHIFT_ID>\"}'"
+  }
+}
+

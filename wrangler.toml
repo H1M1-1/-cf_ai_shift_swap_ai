@@ -1,0 +1,41 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "cf-ai-shift-swap-ai"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# Force dev server to use port 8787
+[dev]
+port = 8787
+
+# ⚠️ IMPORTANT: Replace with your Cloudflare account ID before running
+# Find it at: https://dash.cloudflare.com/ -> Workers & Pages -> Account ID (right sidebar)
+account_id = "YOUR_ACCOUNT_ID_HERE"
+
+# Workers AI binding
+# This enables access to Cloudflare's AI models
+[ai]
+binding = "AI"
+
+# Durable Objects binding
+# ShiftRoom stores all shift posts and matches
+[[durable_objects.bindings]]
+name = "SHIFT_ROOM"
+class_name = "ShiftRoom"
+
+# Durable Objects migration
+# Required for setting up the Durable Object with SQL storage
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ShiftRoom"]
+
+# Static assets configuration
+# Serves the public/ directory (index.html)
+# Updated for Wrangler 4.x
+[assets]
+directory = "./public"
+
+# CORS headers for development
+# Remove or restrict in production
+[vars]
+CORS_ALLOW_ORIGIN = "*"
+
