@@ -6,6 +6,14 @@
 📁 **Repository:** [github.com/H1M1-1/-cf_ai_shift_swap_ai](https://github.com/H1M1-1/-cf_ai_shift_swap_ai)  
 🔐 **Security & Configuration:** See [SECURITY.md](./SECURITY.md) for setup requirements and what's safe to share publicly
 
+> 🧭 **Documentation Map**
+> - [Quick Start](QUICKSTART.md)
+> - [Project Summary](PROJECT_SUMMARY.md)
+> - [AI Prompts](PROMPTS.md)
+> - [Security Notes](SECURITY.md)
+> - [Command Reference](COMMANDS.md)
+> - [Delivery Checklist](DELIVERY_CHECKLIST.md)
+
 ---
 
 ## 📘 Project Overview
