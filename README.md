@@ -2,7 +2,8 @@
 
 **An Intelligent Workforce Scheduling Platform Powered by Cloudflare Workers AI**
 
-🔗 **Live Demo:** `https://cf-ai-shift-swap-ai.YOUR_SUBDOMAIN.workers.dev` (after deployment)  
+🔗 **Live Demo:** Deploy with `wrangler deploy` to get your `*.workers.dev` URL  
+📁 **Repository:** [github.com/H1M1-1/-cf_ai_shift_swap_ai](https://github.com/H1M1-1/-cf_ai_shift_swap_ai)  
 🔐 **Security & Configuration:** See [SECURITY.md](./SECURITY.md) for setup requirements and what's safe to share publicly
 
 ---
@@ -895,7 +896,7 @@ npm run deploy
 Total Upload: 45.23 KiB / gzip: 12.84 KiB
 Uploaded cf-ai-shift-swap-ai (0.87 sec)
 Published cf-ai-shift-swap-ai (0.42 sec)
-  https://cf-ai-shift-swap-ai.your-subdomain.workers.dev
+  https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev
 Current Deployment ID: abcd1234-5678-90ef-ghij-klmnopqrstuv
 ```
 
@@ -904,7 +905,7 @@ Current Deployment ID: abcd1234-5678-90ef-ghij-klmnopqrstuv
 ### Step 7: Verify Deployment
 ```bash
 # Test POST endpoint
-curl -X POST https://cf-ai-shift-swap-ai.your-subdomain.workers.dev/api/post \
+curl -X POST https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev/api/post \
   -H "Content-Type: application/json" \
   -d '{
     "user": "Alice Johnson",
@@ -915,10 +916,10 @@ curl -X POST https://cf-ai-shift-swap-ai.your-subdomain.workers.dev/api/post \
   }'
 
 # Test GET endpoint
-curl https://cf-ai-shift-swap-ai.your-subdomain.workers.dev/api/list
+curl https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev/api/list
 
 # Open in browser
-open https://cf-ai-shift-swap-ai.your-subdomain.workers.dev
+open https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev
 ```
 
 ---

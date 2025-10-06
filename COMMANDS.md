@@ -89,7 +89,8 @@ npx wrangler deploy
 ### View Deployment
 ```bash
 # The deploy command outputs your URL:
-# https://cf-ai-shift-swap-ai.YOUR_SUBDOMAIN.workers.dev
+# https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev
+# Example: https://cf-ai-shift-swap-ai.h1m1-1.workers.dev
 ```
 
 ### View Logs
@@ -101,11 +102,11 @@ npx wrangler tail
 
 ## Testing Production Deployment
 
-Replace `localhost:8787` with your production URL:
+**⚠️ Important:** Replace `<your-subdomain>` with your actual Workers subdomain from the deployment output.
 
 ### Post a Shift (Production)
 ```bash
-curl -X POST https://cf-ai-shift-swap-ai.YOUR_SUBDOMAIN.workers.dev/api/post \
+curl -X POST https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev/api/post \
   -H "Content-Type: application/json" \
   -d '{
     "user": "Alice Johnson",
@@ -118,12 +119,12 @@ curl -X POST https://cf-ai-shift-swap-ai.YOUR_SUBDOMAIN.workers.dev/api/post \
 
 ### List All Shifts (Production)
 ```bash
-curl https://cf-ai-shift-swap-ai.YOUR_SUBDOMAIN.workers.dev/api/list
+curl https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev/api/list
 ```
 
 ### Request AI Match (Production)
 ```bash
-curl -X POST https://cf-ai-shift-swap-ai.YOUR_SUBDOMAIN.workers.dev/api/match \
+curl -X POST https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev/api/match \
   -H "Content-Type: application/json" \
   -d '{"requestId": "PASTE_SHIFT_ID_HERE"}'
 ```
@@ -182,7 +183,7 @@ Make it executable and run:
 chmod +x test.sh
 ./test.sh http://localhost:8787
 # or for production:
-./test.sh https://cf-ai-shift-swap-ai.YOUR_SUBDOMAIN.workers.dev
+./test.sh https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev
 ```
 
 **Note:** Requires `jq` for JSON parsing. Install with:
@@ -227,7 +228,7 @@ npm run dev
 # 4. Deploy when ready
 npm run deploy
 # 5. Verify production
-curl https://cf-ai-shift-swap-ai.YOUR_SUBDOMAIN.workers.dev/api/list
+curl https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev/api/list
 ```
 
 ---
@@ -296,7 +297,7 @@ curl http://localhost:8787/api/list
 npm run deploy
 
 # Production test
-curl https://cf-ai-shift-swap-ai.YOUR_SUBDOMAIN.workers.dev/api/list
+curl https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev/api/list
 
 # Done!
 ```

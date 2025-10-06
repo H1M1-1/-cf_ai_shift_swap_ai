@@ -218,7 +218,7 @@ npm run deploy
 ```
 Total Upload: 45.23 KiB / gzip: 12.84 KiB
 Published cf-ai-shift-swap-ai (0.87 sec)
-  https://cf-ai-shift-swap-ai.your-subdomain.workers.dev
+  https://cf-ai-shift-swap-ai.<your-subdomain>.workers.dev
 ```
 
 **Your app is now live!** Visit the URL shown.
