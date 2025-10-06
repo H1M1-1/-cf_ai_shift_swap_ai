@@ -15,8 +15,12 @@
     "durable-objects",
     "scheduling"
   ],
-  "author": "",
+  "author": "Haashim Malik",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/H1M1-1/-cf_ai_shift_swap_ai.git"
+  },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241127.0",
     "wrangler": "^4.42.0"

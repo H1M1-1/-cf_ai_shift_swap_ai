@@ -316,5 +316,5 @@ I'm proud to submit this as evidence of my readiness for the Cloudflare internsh
 This project is original work created for the Cloudflare 2025 Internship Application.  
 **Author:** Haashim Malik  
 **Contact:** [Add your email/LinkedIn]  
-**Repository:** [github.com/haashimmalik](https://github.com/haashimmalik) *(update with your actual GitHub URL)*
+**Repository:** [github.com/H1M1-1/-cf_ai_shift_swap_ai](https://github.com/H1M1-1/-cf_ai_shift_swap_ai)
 
